@@ -1,0 +1,201 @@
+/* Reservtaion Plugin Styles */
+
+.couvert-reservation__wrapper{
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+/* Grid System */
+
+.column-wrap{
+  width:100%;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.column-1,.column-2 ,.column-3 , .column-4, .column-5, .column-6, .column-7 , .column-8 , .column-9 , .column-10 , .column-11, .column-12{
+    float: left;
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.column-1{
+  width: 8.333%;
+}
+
+.column-2{
+  width: 16.666%;
+}
+
+.column-3{
+  width:25%;
+}
+
+.column-4{
+  width:33.333%;
+}
+
+.column-5{
+  width:41.666%;
+}
+
+.column-6{
+  width:50%;
+}
+
+.column-7{
+  width:58.333%;
+}
+
+.column-8{
+  width:66.666%;
+}
+
+.column-9{
+  width:75%;
+}
+
+.column-10{
+  width:83.333%;
+}
+
+.column-11{
+  width:91.666%;
+}
+
+.column-12{
+  width:100%;
+}
+
+.clear-fix{
+  clear: both;
+}
+
+.input-wrapper{
+  margin-bottom: 15px;
+}
+
+.input-wrapper label{
+  display: inline-block;
+  max-width: 100%;
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+
+.input-wrapper label span{
+  font-size: 75%;
+}
+
+.input-wrapper input , .input-wrapper  select {
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+.input-wrapper button{
+    display: inline-block;
+    padding: 10px 16px;
+    margin-bottom: 0;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.time-slots input[type="radio"] , .gender-selection input[type="radio"]{
+  display: none;
+}
+
+.time-slots input[type="radio"] + label , .gender-selection input[type="radio"] + label {
+    width: 60px;
+    height: 45px;
+    line-height: 45px;
+    font-size: 14px;
+    background: #eeeeee;
+    text-align: center;
+    padding: 0 5px;
+    cursor: pointer;
+    margin-right: 10px;
+    border-radius: 4px;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),0 1px 5px 0 rgba(0,0,0,0.12),0 3px 1px -2px rgba(0,0,0,0.2);
+}
+
+input[type='radio']:checked + label{
+  background: #007acc;
+  color: #FFF;
+}
+
+.hidden{
+  display: none !important;
+}
+
+.loader--audioWave {
+  width: 3em;
+  height: 2em;
+  background: linear-gradient(#1a1a1a, #1a1a1a) 0 50%, linear-gradient(#1a1a1a, #1a1a1a) 0.625em 50%, linear-gradient(#1a1a1a, #1a1a1a) 1.25em 50%, linear-gradient(#1a1a1a, #1a1a1a) 1.875em 50%, linear-gradient(#1a1a1a, #1a1a1a) 2.5em 50%;
+  background-repeat: no-repeat;
+  background-size: 0.5em 0.25em, 0.5em 0.25em, 0.5em 0.25em, 0.5em 0.25em, 0.5em 0.25em;
+  animation: audioWave 1.5s linear infinite;
+  float: right;
+}
+@keyframes audioWave {
+  25% {
+    background: linear-gradient(#1a1a1a, #1a1a1a) 0 50%, linear-gradient(#1a1a1a, #1a1a1a) 0.625em 50%, linear-gradient(#1a1a1a, #1a1a1a) 1.25em 50%, linear-gradient(#1a1a1a, #1a1a1a) 1.875em 50%, linear-gradient(#1a1a1a, #1a1a1a) 2.5em 50%;
+    background-repeat: no-repeat;
+    background-size: 0.5em 2em, 0.5em 0.25em, 0.5em 0.25em, 0.5em 0.25em, 0.5em 0.25em;
+  }
+  37.5% {
+    background: linear-gradient(#1a1a1a, #1a1a1a) 0 50%, linear-gradient(#1a1a1a, #1a1a1a) 0.625em 50%, linear-gradient(#1a1a1a, #1a1a1a) 1.25em 50%, linear-gradient(#1a1a1a, #1a1a1a) 1.875em 50%, linear-gradient(#1a1a1a, #1a1a1a) 2.5em 50%;
+    background-repeat: no-repeat;
+    background-size: 0.5em 0.25em, 0.5em 2em, 0.5em 0.25em, 0.5em 0.25em, 0.5em 0.25em;
+  }
+  50% {
+    background: linear-gradient(#1a1a1a, #1a1a1a) 0 50%, linear-gradient(#1a1a1a, #1a1a1a) 0.625em 50%, linear-gradient(#1a1a1a, #1a1a1a) 1.25em 50%, linear-gradient(#1a1a1a, #1a1a1a) 1.875em 50%, linear-gradient(#1a1a1a, #1a1a1a) 2.5em 50%;
+    background-repeat: no-repeat;
+    background-size: 0.5em 0.25em, 0.5em 0.25em, 0.5em 2em, 0.5em 0.25em, 0.5em 0.25em;
+  }
+  62.5% {
+    background: linear-gradient(#1a1a1a, #1a1a1a) 0 50%, linear-gradient(#1a1a1a, #1a1a1a) 0.625em 50%, linear-gradient(#1a1a1a, #1a1a1a) 1.25em 50%, linear-gradient(#1a1a1a, #1a1a1a) 1.875em 50%, linear-gradient(#1a1a1a, #1a1a1a) 2.5em 50%;
+    background-repeat: no-repeat;
+    background-size: 0.5em 0.25em, 0.5em 0.25em, 0.5em 0.25em, 0.5em 2em, 0.5em 0.25em;
+  }
+  75% {
+    background: linear-gradient(#1a1a1a, #1a1a1a) 0 50%, linear-gradient(#1a1a1a, #1a1a1a) 0.625em 50%, linear-gradient(#1a1a1a, #1a1a1a) 1.25em 50%, linear-gradient(#1a1a1a, #1a1a1a) 1.875em 50%, linear-gradient(#1a1a1a, #1a1a1a) 2.5em 50%;
+    background-repeat: no-repeat;
+    background-size: 0.5em 0.25em, 0.5em 0.25em, 0.5em 0.25em, 0.5em 0.25em, 0.5em 2em;
+  }
+}
+
+
+.input-wrapper .picker__select--year{
+  width: 30% !important;
+  margin: 0 auto !important;
+}
